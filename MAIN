@@ -1,0 +1,129 @@
+using System;
+
+class Program
+{
+     static void Main(string[] args)
+    {
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine("S2--------------------S2");
+            Console.WriteLine("  CALCULADORA DA CAROL");
+            Console.WriteLine("S2--------------------S2\n");
+
+            Console.WriteLine("1) ADIÇÃO");
+            Console.WriteLine("2) SUBTRAÇÃO");
+            Console.WriteLine("3) DIVISÃO");
+            Console.WriteLine("4) MULTIPLICAÇÃO");
+            Console.WriteLine("0) SAIR");
+            Console.WriteLine("Escolha uma das opções acima: ");
+            int opcao = Convert.ToInt32(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 0:
+                    return; 
+                case 1:
+                adicao.Executar();
+                    break;
+                case 2:
+                    subtracao.Executar();
+                    break;
+                case 3:
+                    divisao.Executar();
+                    break;
+                case 4:
+                    multiplicacao.Executar();
+                    break;
+
+                default:
+                Console.WriteLine("Opção inválida.");
+                break;
+            }
+        }
+
+    }
+
+}
+
+ class adicao
+{
+
+    public static void Executar()
+    {
+        Console.Clear();
+        Console.WriteLine("Insira o primeiro número:");
+        float numero1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Insira o segundo número:");
+        float numero2 = Convert.ToInt32(Console.ReadLine());
+
+        float resultado = numero1 + numero2;
+
+        Console.WriteLine("O resultado é: " + resultado);
+        Console.WriteLine("\nPressione qualquer tecla para voltar...");
+        Console.ReadKey();
+
+    }
+}
+
+class subtracao
+{
+
+    public static void Executar()
+    {
+        Console.Clear();
+        Console.WriteLine("Insira o primeiro número:");
+        float numero1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Insira o segundo número:");
+        float numero2 = Convert.ToInt32(Console.ReadLine());
+
+        float resultado = numero1 - numero2;
+
+        Console.WriteLine("O resultado é: " + resultado);
+        Console.WriteLine("\nPressione qualquer tecla para voltar...");
+        Console.ReadKey();
+
+    }
+}
+class divisao
+{
+
+    public static void Executar()
+    {
+        Console.Clear();
+        Console.WriteLine("Insira o primeiro número:");
+        float numero1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Insira o segundo número:");
+        float numero2 = Convert.ToInt32(Console.ReadLine());
+
+        float resultado = numero1 / numero2;
+
+        Console.WriteLine("O resultado é: " + resultado);
+        Console.WriteLine("\nPressione qualquer tecla para voltar...");
+        Console.ReadKey();
+
+    }
+}
+class multiplicacao
+{
+
+    public static void Executar()
+    {
+        Console.Clear();
+        Console.WriteLine("Insira o primeiro número:");
+        float numero1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Insira o segundo número:");
+        float numero2 = Convert.ToInt32(Console.ReadLine());
+
+        float resultado = numero1 * numero2;
+
+        Console.WriteLine("O resultado é: " + resultado);
+        Console.WriteLine("\nPressione qualquer tecla para voltar...");
+        Console.ReadKey();
+
+    }
+}
